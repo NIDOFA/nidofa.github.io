@@ -110,10 +110,10 @@ document.getElementById("tel").addEventListener("input", () => {
 });
 
 plantSounds.forEach(sound => {
-    sound.volume = 0.5;
+    sound.volume = 0.1;
 });
 
-levelUpSound.volume = 0.5;
+levelUpSound.volume = 0.2;
 
 document.getElementById('plantBtn').addEventListener('click', () => {
     plantSounds.forEach(sound => {
