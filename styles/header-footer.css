@@ -1,0 +1,323 @@
+header{
+    background-color: black;
+    height: 100px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px calc((100vw - 980px)/2);
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+header .logo{
+    align-self: normal;
+    margin-top: -20px;
+    transition: all .2s;
+}
+
+header .logo a img{
+    height: 100px;
+}
+
+header nav{
+    display: flex;
+    gap: clamp(10px, 4vw, 80px);
+}
+
+header nav .element{
+    transition: all .2s;
+}
+
+header nav .element a{
+    color: white;
+    text-decoration: none;
+    font-family: "Archivo Narrow", Tahoma, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all .2s;
+}
+
+header nav .element a:hover{
+    color: #029a32;
+    text-decoration: underline;
+}
+
+header nav .element:has(a:active),
+header .logo:active{
+    transform: scale(.95);
+}
+
+footer .topfooter{
+    padding: 20px calc((100vw - 980px)/2);
+    color: white;
+    font-family: "Archivo Narrow", Tahoma, sans-serif;
+    font-weight: 600;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .topfooter .text{
+    padding-left: 10px;
+}
+
+footer .topfooter a{
+    color: white;
+}
+
+footer .topfooter a .icon{
+    font-size: 2rem;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+footer .topfooter a:nth-child(5) .icon{
+    position: relative;
+}
+
+footer .topfooter a:nth-child(5) .icon .fab{
+    transition: all .2s;
+}
+
+footer .topfooter a:nth-child(5) .icon .icon-hover{
+    background: linear-gradient(45deg, #E1306C, #C13584, #833AB4, #5851DB, #405DE6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+}
+
+footer .topfooter a:nth-child(2) .icon:hover{
+    color: #25D366;
+}
+
+footer .topfooter a:nth-child(3) .icon:hover{
+    color: #1877F2;
+}
+
+footer .topfooter a:nth-child(4) .icon:hover{
+    color: #1DA1F2;
+}
+
+footer .topfooter a:nth-child(5) .icon:hover .fab:first-child{
+    opacity: 0;
+}
+
+footer .topfooter a:nth-child(5) .icon:hover .icon-hover{
+    opacity: 1;
+}
+
+footer .topfooter a:nth-child(6) .icon:hover{
+    color: #F00;
+}
+
+footer .topfooter a:nth-child(7) .icon:hover{
+    color: #0077B5;
+}
+
+footer .topfooter .icon:active{
+    transform: scale(0.9);
+}
+
+footer .bottomfooter{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-top: 2px solid #333;
+    background-color: black;
+    padding: 20px calc((100vw - 980px)/2);
+}
+
+footer .bottomfooter .infos{
+    display: flex;
+    padding: 0 10px;
+}
+
+footer .bottomfooter .infos .ceste{
+    flex: 1;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: default;
+    user-select: none;
+}
+
+footer .bottomfooter .infos .ceste .partie,
+footer .bottomfooter .infos .ceste .subpartie{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .bottomfooter .infos .ceste > .partie:nth-child(1) > div:nth-child(2),
+footer .bottomfooter .infos .ceste > .partie:nth-child(2) > div:nth-child(3),
+footer .bottomfooter .infos .ceste > .partie:nth-child(3) > div:nth-child(3),
+footer .bottomfooter .infos .ceste > .partie:nth-child(4) > div:nth-child(2),
+footer .bottomfooter .infos .ceste > .partie:nth-child(4) > div:nth-child(4),
+footer .bottomfooter .infos .ceste > .partie:nth-child(5) > div:nth-child(2),
+footer .bottomfooter .infos .ceste > .partie:nth-child(5) > div:nth-child(4){
+    margin-right: .5rem;
+}
+
+footer .bottomfooter .infos .ceste .partie div{
+    transition: all .2s;
+}
+
+footer .bottomfooter .infos .ceste .partie :not(div:last-child):hover{
+    transform: scale(1.4);
+}
+
+footer .bottomfooter .infos .ceste .partie .cap:hover{
+    animation: cap-color 1s infinite ease-in-out;
+}
+
+footer .bottomfooter .infos .contact-info{
+    flex: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .bottomfooter .infos .contact-info .tel-fsbm a,
+footer .bottomfooter .infos .contact-info .tel-ceste a,
+footer .bottomfooter .infos .contact-info .loc a{
+    color: white;
+    text-decoration: none;
+}
+
+footer .bottomfooter .infos .contact-info .tel-fsbm a:hover,
+footer .bottomfooter .infos .contact-info .tel-ceste a:hover,
+footer .bottomfooter .infos .contact-info .loc a:hover{
+    border-bottom: 2px solid #248fba;
+}
+
+footer .bottomfooter .infos .contact-info .loc iframe{
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 100%;
+    aspect-ratio: 4/3;
+}
+
+footer .bottomfooter .infos .logo_fsbm-game{
+    flex: 1;
+}
+
+footer .bottomfooter .infos .logo_fsbm-game img{
+    width: 100%;
+}
+
+footer .bottomfooter .infos .logo_fsbm-game .game{
+    width: 100%;
+    position: relative;
+}
+
+footer .bottomfooter .infos .logo_fsbm-game .game #gameCanvas {
+    display: block;
+    border: 3px solid hsl(25, 50%, 21%);
+    border-radius: 20px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer .bottomfooter .infos .logo_fsbm-game .game .score-container{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer .bottomfooter .infos .logo_fsbm-game .game .score{
+    display: flex;
+    gap: 10px;
+    padding: 5px 10px;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+footer .bottomfooter .infos .logo_fsbm-game .game #plantBtn {
+    position: absolute;
+    top: 210px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Archivo Narrow", Tahoma, sans-serif;
+    font-size: 1rem;
+    color: white;
+    border: 3px solid hsl(139, 100%, 21%);
+    background-color: hsl(139, 97%, 31%);
+    border-radius: 20px 0;
+    width: 100px;
+    padding: 10px 10px;
+    cursor: pointer;
+    user-select: none;
+    transition: all .2s;
+}
+
+footer .bottomfooter .infos .logo_fsbm-game .game #plantBtn:hover{
+    animation: plantBtn-hover 1s infinite ease-in-out;
+}
+
+footer .bottomfooter .infos .logo_fsbm-game .game #plantBtn:active{
+    animation: plantBtn-hover 1s infinite ease-in-out;
+    filter: brightness(80%);
+    transform: translateX(-50%) scale(.95);
+}
+
+footer .bottomfooter .links{
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+footer .bottomfooter .links a{
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: all .2s;
+}
+
+footer .bottomfooter .links a:hover{
+    color: #248fba;
+    text-decoration: underline;
+}
+
+footer .bottomfooter .copyright{
+    color: white;
+    padding: 0 10px;
+    font-family: "Archivo Narrow", Tahoma, sans-serif;
+}
+
+@keyframes cap-color {
+    0%{
+        color: #029a32;
+    }
+    50%{
+        color: #248fba;
+    }
+    100%{
+        color: #029a32;
+    }
+}
+
+@keyframes plantBtn-hover {
+    0%{
+        border-radius: 20px 0;
+    }
+    50%{
+        border-radius: 0 20px;
+    }
+    100%{
+        border-radius: 20px 0;
+    }
+}

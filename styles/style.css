@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family: "Fira Sans", 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+}
+
+.container{
+    padding: 100px calc((100vw - 980px)/2) 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.container section{
+    padding: 10px;
+    position: relative;
+}
+
+.container .sec1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container .sec1 .title{
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: .1rem;
+}
+
+.container .sec1 .title span{
+    color: #029a32;
+}
+
+.container .sec1 .content{
+    display: flex;
+}
+
+.container .sec1 .content .images{
+    width: 60%;
+    position: relative;
+    aspect-ratio: 8/7;
+}
+
+.container .sec1 .content .images .image{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(.9) saturate(1.5);
+    transition: all .5s;
+    border-radius: 20px 0 0 20px;
+}
+
+.container .sec1 .content .images .image:nth-child(1){
+    background-image: url(../media/ceste-pic1.jpeg);
+    animation: sec1-image1 10s infinite ease-in-out;
+}
+
+.container .sec1 .content .images .image:nth-child(2){
+    background-image: url(../media/ceste-pic3.jpg);
+    background-position: bottom;
+    animation: sec1-image2 10s infinite ease-in-out;
+}
+
+.container .sec1 .content .images .image:last-child{
+    background-image: url(../media/ceste-pic5.jpg);
+    animation: sec1-image3 10s infinite ease-in-out;
+}
+
+@keyframes sec1-image1 {
+    0%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 0;
+    }
+    86%{
+        opacity: 0;
+    }
+    96%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes sec1-image2 {
+    0%{
+        opacity: 0;
+    }
+
+    20%{
+        opacity: 0;
+    }
+
+    30%{
+        opacity: 1;
+    }
+    53.33%{
+        opacity: 1;
+    }
+    64%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes sec1-image3 {
+    0%{
+        opacity: 0;
+    }
+    53%{
+        opacity: 0;
+    }
+    64%{
+        opacity: 1;
+    }
+    86.66%{
+        opacity: 1;
+    }
+
+    96%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.container .sec1 .content .rjn{
+    flex: 1;
+    background-color: #029a32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 20px 20px 0;
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+    margin-left: -10%;
+    padding-left: 10%;
+    transition: all .5s;
+}
+.container .sec1 .content .rjn a{
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: all .5s;
+    padding: 40px;
+}
+.container .sec1 .content .rjn:hover{
+    background-color: #248fba;
+    border-radius: 20px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    margin-left: -60%;
+    padding-left: 0;
+}
+.container .sec1 .content .rjn:hover a{
+    font-size: 2.5rem;
+    color: #111;
+    text-align: center;
+    padding: 0 180px;
+}
+
+.container .sec1 .content .rjn a:active{
+    font-size: 2.4rem;
+    transition: all .2s;
+}
+
+.container .sec1 .content .rjn:has(a:active){
+    background-color: #029a32;
+    transition: all .2s;
+}
+
+.container .sec2{
+    display: flex;
+    gap: 10px;
+}
+
+
+.container .sec2 .highlights{
+    flex: 5;
+    position: relative;
+}
+
+.container .sec2 .highlights .title{
+    font-size: 1.9rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.container .sec2 .highlights .images-container{
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
+    aspect-ratio: 4/3;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.container .sec2 .highlights .images-container .images-highlights{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: none;
+    transition: transform 0.5s ease-in-out;
+}
+
+.container .sec2 .highlights .images-container .images-highlights .item-highlights{
+    min-width: 100%;
+}
+
+.container .sec2 .highlights .images-container .images-highlights .item-highlights .image{
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+}
+
+.container .sec2 .highlights .images-container .images-highlights .item-highlights .image .content{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(.8) saturate(1.2);
+}
+
+.container .sec2 .highlights .images-container .images-highlights .item-highlights:first-child .image .content{
+    background-image: url(../media/ceste-pic2.jpeg);
+}
+.container .sec2 .highlights .images-container .images-highlights .item-highlights:nth-child(2) .image .content{
+    background-image: url(../media/ceste-pic4.jpg);
+}
+.container .sec2 .highlights .images-container .images-highlights .item-highlights:nth-child(3) .image .content{
+    background-image: url(../media/ceste-pic6.jpg);
+}
+.container .sec2 .highlights .images-container .images-highlights .item-highlights:last-child .image .content{
+    background-image: url(../media/ceste-pic7.jpg);
+}
+
+.container .sec2 .highlights .images-container .btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #029a32bb;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.container .sec2 .highlights #leftBtn{
+    left: 10px;
+}
+
+.container .sec2 .highlights #rightBtn{
+    right: 10px;
+}
+
+.container .sec2 .highlights .images-container .btn span{
+    font-size: 1.5rem;
+}
+
+.container .sec2 .highlights .images-container #leftBtn span{
+    transform: translateX(-1px);
+}
+.container .sec2 .highlights .images-container #rightBtn span{
+    transform: translateX(1px);
+}
+
+.container .sec2 .highlights .images-container .btn:hover{
+    background-color: #026923;
+}
+
+.container .sec2 .highlights .images-container .btn:active{
+    transform: translateY(-50%) scale(.95);
+}
+
+.container .sec2 .highlights .images-container .index-container{
+    position: absolute;
+    width: 100px;
+    height: 4%;
+    left: 50%;
+    bottom: 2%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .sec2 .highlights .images-container .index-container .index-image{
+    height: 10px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #808080;
+}
+
+.container .sec2 .highlights .images-container .index-container .index-image:first-child{
+    background-color: #248fba;
+}
+
+.container .sec2 .right{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container .sec2 .right .evenement{
+    flex: 1;
+    min-height: 48%;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.container .sec2 .right .evenement .image{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top;
+    border-radius: 10px;
+    z-index: -1;
+    filter: brightness(.4);
+    background-image: url(../media/semaine\ de\ non-violence.jpeg);
+}
+
+.container .sec2 .right .evenement .title{
+    color: #248fba;
+    font-family: "Archivo Narrow", Tahoma, sans-serif;
+    font-size: calc(1rem + 40%);
+    line-height: calc(.9rem + 40%);
+    font-weight: 900;
+}
+
+.container .sec2 .right .evenement label{
+    position: absolute;
+    bottom: 30%;
+    left: 10px;
+    color: #248fba;
+    font-size: calc(1rem + 15%);
+    font-weight: 500;
+}
+
+.container .sec2 .right .evenement #verifier{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: #248fba;
+    padding: 2% 6%;
+    font-size: calc(1rem + 10%);
+    text-decoration: none;
+}
+
+.container .sec2 .right .qst{
+    flex: 1;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.container .sec2 .right .qst .title{
+    font-family: "Barlow Condensed", 'Arial Narrow', Arial, sans-serif;
+    font-size: calc(1rem + 100%);
+    font-weight: 700;
+    display: inline;
+}
+.container .sec2 .right .qst .content{
+    display: flex;
+}
+.container .sec2 .right .qst .content .left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.container .sec2 .right .qst .content .left .text{
+    padding-top: 5%;
+    font-size: calc(1rem + 10%);
+    flex: 1;
+}
+.container .sec2 .right .qst .content .left .button{
+    border: 2px solid white;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.container .sec2 .right .qst .content .left .button:hover{
+    background-color: white;
+    color: black;
+    font-weight: 700;
+}
+.container .sec2 .right .qst .content .left .rjn{
+    padding-top: 10px;
+}
+.container .sec2 .right .qst .content .left .rjn a{
+    color: white;
+}
+.container .sec2 .right .qst .content .right{
+    flex: 1;
+}
+.container .sec2 .right .qst .content .right .icon{
+    background-color: #248fba;
+    border-radius: 50%;
+    width: 70%;
+    aspect-ratio: 1;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 20%;
+}
+
+.container .sec2 .right .qst .content .right .icon span{
+    font-size: calc(1.5rem + 200%);
+    text-shadow:
+        0px 1px 0 black,
+        0px -1px 0 black,
+        1px -1px 0 black,
+        1px 0px 0 black,
+        1px 1px 0 black,
+        -1px -1px 0 black,
+        -1px 0px 0 black,
+        -1px 1px 0 black;
+}
+
+.container .sec2 .right .qst .content .right .icon span:first-child{
+    padding-left: 15px;
+}
+.container .sec2 .right .qst .content .right .icon span:last-child{
+    font-size: calc(1rem + 150%);
+    color: #029a32;
+    align-self:flex-end;
+    margin-left: -15%;
+    margin-bottom: -2%;
+}
+
+.container .sec3{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .sec3 .title{
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+.container .sec3 .membres{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.container .sec3 .membres .membre{
+    width: 40vw;
+    max-width: 400px;
+    aspect-ratio: 4/3;
+    position: relative;
+}
+
+.container .sec3 .membres .membre .image{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../media/M.\ Ayoub\ Karroumi.jpeg);
+    z-index: -1;
+    border-radius: 10px;
+    filter: brightness(1.2);
+}
+
+.container .sec3 .membres .membre:last-child .image{
+    background-image: url(../media/M.\ Mustapha\ Mouflih.jpeg);
+    background-position: top;
+}
+.container .sec3 .membres .membre .subimage{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #000, #0000);
+    border-radius: 10px;
+}
+
+.container .sec3 .membres .membre .content{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.container .sec3 .membres .membre .content .nom{
+    font-size: clac(1rem + .5vw);
+    color: white;
+}
+
+.container .sec3 .membres .membre .content .description{
+    font-size: calc(.5rem + .5vw);
+    color: white;
+    padding-top: 10px;
+}
+.container .sec3 .voir-plus{
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all .2s;
+}
+.container .sec3 .voir-plus:hover{
+    background-color: hsl(0, 0%, 20%);
+}
+.container .sec3 .voir-plus:active{
+    transform: scale(.95);
+}
+
+.container .sec4{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .sec4 .title{
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+.container .sec4 .content{
+    display: flex;
+    justify-content: space-around;
+}
+.container .sec4 .content .summary{
+    font-family: "Archivo Narrow", Tahoma, sans-serif;
+    font-size: 1.2rem;
+}
+.container .sec4 .content .summary ol{
+    margin-left: 20px;
+}
+
+.container .sec4 .content .bilan{
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 400px;
+}
+
+.container .sec4 .content .bilan object{
+    height: 90%;
+    aspect-ratio: 9/16;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.container .sec4 .content .bilan a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all .2s;
+    align-self: center;
+}
+.container .sec4 .content .bilan a:active{
+    transform: scale(.95);
+}

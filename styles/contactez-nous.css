@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family: "Fira Sans", 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+}
+
+.container{
+    padding-top: 100px;
+    transition: all .5s;
+}
+
+.container .heading{
+    background-color: #029a32;
+    height: 140px;
+    padding: 0 calc((100vw - 980px)/2);
+}
+
+.container .heading .path{
+    font-family: "Archivo Narrow", Tahoma, sans-serif;
+    padding: 10px 0;
+}
+
+.container .heading .path a{
+    color: black;
+}
+
+.container .heading .title{
+    font-size: 3.5rem;
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+
+.container .elements{
+    padding: 40px calc((100vw - 980px)/2);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: clamp(0, 2vw, 40px);
+}
+
+.container .elements .element{
+    min-width: 33vh;
+    position: relative;
+    padding: 0 10px;
+}
+
+.container .elements .element .title .logo{
+    font-size: 90px;
+    cursor: default;
+    user-select: none;
+    transition: all .2s;
+    color: black;
+}
+
+.container .elements .element .title .text{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: -5px 0 20px;
+    transition: all .2s;
+}
+
+.container .elements .element:nth-child(1) .title .logo:hover,
+.container .elements .element:nth-child(1) .title .text:hover,
+.container .elements .element:nth-child(1) .title:has(.logo:hover) .text,
+.container .elements .element:nth-child(1) .title:has(.text:hover) .logo{
+    color: #007BFF;
+}
+
+.container .elements .element:nth-child(2) .title .logo:hover,
+.container .elements .element:nth-child(2) .title .text:hover,
+.container .elements .element:nth-child(2) .title:has(.logo:hover) .text,
+.container .elements .element:nth-child(2) .title:has(.text:hover) .logo{
+    color: #25D366;
+}
+
+.container .elements .element:nth-child(3) .title .logo:hover,
+.container .elements .element:nth-child(3) .title .text:hover,
+.container .elements .element:nth-child(3) .title:has(.logo:hover) .text,
+.container .elements .element:nth-child(3) .title:has(.text:hover) .logo{
+    color: #FFA500;
+}
+
+.container .elements .element:nth-child(4) .title .logo:hover,
+.container .elements .element:nth-child(4) .title .text:hover,
+.container .elements .element:nth-child(4) .title:has(.logo:hover) .text,
+.container .elements .element:nth-child(4) .title:has(.text:hover) .logo{
+    color: #4267B2;
+}
+
+.container .elements .element:nth-child(5) .title .logo:hover,
+.container .elements .element:nth-child(5) .title .text:hover,
+.container .elements .element:nth-child(5) .title:has(.logo:hover) .text,
+.container .elements .element:nth-child(5) .title:has(.text:hover) .logo{
+    color: #FF6347;
+}
+
+.container .elements .element:nth-child(6) .title .logo:hover,
+.container .elements .element:nth-child(6) .title .text:hover,
+.container .elements .element:nth-child(6) .title:has(.logo:hover) .text,
+.container .elements .element:nth-child(6) .title:has(.text:hover) .logo{
+    color: #4682B4;
+}
+
+.container .elements .element .content{
+    min-height: 220px;
+}
+
+.container .elements .element .content .text{
+    font-weight: 500;
+    text-align: justify;
+}
+
+.container .elements .element .content .button{
+    position: absolute;
+    bottom: 30px;
+    width: 70%;
+    text-align: center;
+    font-family: "Archivo Narrow", Tahoma, sans-serif;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    user-select: none;
+    transition: all .2s;
+}
+
+.container .elements .element:nth-child(2) .content .button,
+.container .elements .element:nth-child(3) .content .button,
+.container .elements .element:nth-child(5) .content .button{
+    padding: 0;
+}
+
+.container .elements .element .content .button a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    transition: all .2s;
+}
+
+.container .elements .element .content .button:hover,
+.container .elements .element .content .button a:hover{
+    background-color: #248fba;
+    color: black;
+}
+
+.container .elements .element .content .button:active{
+    transform: scale(0.95);
+}
+
+.container .elements .element .content .links{
+    position: absolute;
+    bottom: 30px;
+    width: 90%;
+    padding: 10px 0;    
+    font-family: "Archivo Narrow", Tahoma, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.container .elements .element .content .links a{
+    cursor: default;
+}
+
+.container .elements .element .content .links .icon{
+    color: black;
+    transition: all .2s;
+}
+
+.container .elements .element .content .links a:nth-child(3) .icon{
+    position: relative;
+}
+
+.container .elements .element .content .links a:nth-child(3) .icon .fab{
+    transition: all .2s;
+}
+
+.container .elements .element .content .links a:nth-child(3) .icon .icon-hover{
+    background: linear-gradient(45deg, #E1306C, #C13584, #833AB4, #5851DB, #405DE6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+}
+
+.container .elements .element .content .links .icon:hover{
+    transform: scale(1.7);
+}
+
+.container .elements .element .content .links a:nth-child(2):hover .icon{
+    color: #1877F2;
+}
+
+.container .elements .element .content .links a:nth-child(3) .icon:hover .fab:first-child{
+    opacity: 0;
+}
+
+.container .elements .element .content .links a:nth-child(3) .icon:hover .icon-hover{
+    opacity: 1;
+}
+
+.container .elements .element .content .links a:nth-child(4):hover .icon{
+    color: #25D366;
+}
+
+.container .elements .element .content .links .icon:active{
+    transform: scale(1.5);
+}
+
+.wrapper{
+    background: #248fba28;
+    border: 2px solid rgba(255, 255, 255, .5);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    width: 400px;
+    height: 500px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    border-radius: 20px;
+    transition: all 1s;
+    display: none;
+}
+
+.wrapper #close-bnt{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2.5rem;
+    background-color: #029a32;
+    z-index: 11;
+    padding: 5px;
+    border-radius: 0 20px;
+    user-select: none;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.wrapper #close-bnt:hover{
+    background-color: rgb(177, 0, 0);
+}
+
+.wrapper #form-agent{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 0;
+    gap: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.wrapper #form-agent .input-box{
+    position: relative;
+    height: 60px;
+}
+
+.wrapper #form-agent .input-box .label-input{
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    font-family: "Archivo Narrow", Tahoma, sans-serif;
+    font-size: larger;
+    transition: all .5s;
+    user-select: none;
+}
+
+.wrapper #form-agent .input-box .input,
+.wrapper #form-agent .input-box textarea{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 0 10px;
+    background: none;
+    resize: none;
+    position: absolute;
+    bottom: 0;
+    font-size: large;
+    transition: all .5s ease-in-out;
+}
+
+.wrapper #form-agent .input-box .input:focus,
+.wrapper #form-agent .input-box textarea:focus{
+    outline: none;
+}
+
+.wrapper #form-agent .input-box .input::placeholder{
+    color: black;
+    opacity: 0;
+    transition: opacity .5s;
+}
+.wrapper #form-agent .input-box:has(.input:focus) .input{
+    transition: all 0;
+}
+
+.wrapper #form-agent .input-box .input:focus::placeholder{
+    opacity: .6;
+}
+
+.wrapper #form-agent .input-box:nth-child(4){
+    height: 100px;
+}
+
+.wrapper #form-agent .input-box:nth-child(4) textarea{
+    height: 80px;
+    padding-top: 10px;
+    font-family: "Fira Sans", 'Segoe UI', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1rem;
+}
+
+.wrapper #form-agent .input-box:nth-child(4) textarea::-webkit-scrollbar{
+    width: .5rem;
+}
+
+.wrapper #form-agent .input-box:nth-child(4) textarea::-webkit-scrollbar-track{
+    background-color: beige;
+    border-radius: 1rem;
+    cursor: default;
+    margin-block: .2rem;
+}
+
+.wrapper #form-agent .input-box:nth-child(4) textarea::-webkit-scrollbar-thumb{
+    background-color: red;
+    border-radius: 1rem;
+    border: 1px solid beige;
+    cursor: default;
+}
+
+.wrapper #form-agent .input-box:nth-child(4) .label-input{
+    top: 45px;
+}
+
+.wrapper #form-agent .input-box:nth-child(5){
+    height: 70px;
+}
+
+.wrapper #form-agent .input-box:nth-child(5) .text{
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    font-family: "Archivo Narrow", Tahoma, sans-serif;
+    font-size: larger;
+    transition: all .5s;
+}
+
+.wrapper #form-agent .input-box:nth-child(5) .text{
+    top: 0;
+    font-size: medium;
+}
+
+.wrapper #form-agent .input-box:nth-child(5) input{
+    display: none;
+}
+
+.wrapper #form-agent .input-box:nth-child(5) .file-input{
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.wrapper #form-agent .input-box:nth-child(5) .file-input .input{
+    position: initial;
+    width: auto;
+    height: auto;
+    border: none;
+    font-size: small;
+    background-color: white;
+    padding: 5px;
+    left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s;
+    user-select: none;
+}
+
+.wrapper #form-agent .input-box:nth-child(5) .input:hover{
+    background-color: #ddd;
+}
+
+.wrapper #form-agent .input-box:nth-child(5) .input:active{
+    background-color: #ccc;
+    transform: scale(.99);
+}
+
+.wrapper #form-agent .input-box:nth-child(5) #file-name{
+    font-size: small;
+    font-weight: 600;
+}
+
+.wrapper #form-agent .input-box:last-child{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.wrapper #form-agent .input-box:last-child input{
+    width: 30%;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #029a32;
+    transition: all .2s;
+    user-select: none;
+    font-family: "Archivo Narrow", Tahoma, sans-serif;
+    font-size: 1.5rem;
+    transition: all .2s;
+}
+
+.wrapper #form-agent .input-box:last-child input:hover{
+    background-color: #027229;
+}
+.wrapper #form-agent .input-box:last-child input:active{
+    background-color: #006427;
+    transform: scale(.99);
+}
+
+.wrapper #form-agent .input-box:last-child .invalid-input,
+.wrapper #form-agent .input-box:last-child .invalid-input:hover,
+.wrapper #form-agent .input-box:last-child .invalid-input:active{
+    background-color: #777;
+}
+
+.wrapper-display-none-class{
+    animation: wrapper-display-none .5s ease;
+}
+
+.wrapper-display-yes-class{
+    animation: wrapper-display-yes .5s ease;
+}
+
+
+#under-wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background-color: transparent;
+    display: none;
+}
+    
+@keyframes wrapper-display-none {
+    0%{
+        transform: translate(-50%, -50%) scale(.9);
+    }
+    100%{
+        transform: translate(-50%, -50%) scale(.5);
+        opacity: 0;
+    }
+}
+
+@keyframes wrapper-display-yes {
+    0%{
+        transform: translate(-50%, -50%) scale(.5);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+
+#bluring-page{
+    transition: all .5s;
+}
+
+#bluring-page.blur{
+    filter: blur(10px) brightness(50%);
+    transform: scale(1.05);
+}

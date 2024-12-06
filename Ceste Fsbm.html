@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accuiel - CESTE</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header-footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="shortcut icon" href="media/favicon-ceste-fsbm.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="Ceste Fsbm.html">
+                <img src="media/ceste-fsbm.png" alt="Club CESTE FSBM" title="Club CESTE FSBM">
+            </a>
+        </div>
+        <nav>
+            <div class="element"><a href="pages/a-propos-de-nous.html">À propos de nous</a></div>
+            <div class="element"><a href="pages/evenements-et-activites.html">Événements et Activités</a></div>
+            <div class="element"><a href="pages/contactez-nous.html">Contactez-nous</a></div>
+            <div class="element"><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfyQuI0y-WjCAUS2bQVdID2kI8mUA5selMLHsxnFuf237upZA/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaZE8DLbqf-TtQJ58sptt-METIxpAAQRVyCb9SqbUbH-ziZuziDGHkWku4Y_aem_Pv0rBCMhX3zau4nbdU9lVg">Rejoignez-nous</a></div>
+        </nav>
+    </header>
+    <div class="container">
+        <section class="sec1">
+            <div class="title">
+                <span>Rejoindre</span> Ceste
+            </div>
+            <div class="content">
+                <div class="images">
+                    <div class="image"></div>
+                    <div class="image"></div>
+                    <div class="image"></div>
+                </div>
+                <div class="rjn"><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfyQuI0y-WjCAUS2bQVdID2kI8mUA5selMLHsxnFuf237upZA/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaZE8DLbqf-TtQJ58sptt-METIxpAAQRVyCb9SqbUbH-ziZuziDGHkWku4Y_aem_Pv0rBCMhX3zau4nbdU9lVg">Participez à notre journée universitaire pour approfondir vos connaissances.</a></div>
+            </div>
+        </section>
+
+        <section class="sec2">
+            <div class="highlights">
+                <div class="title">Highlights</div>
+                <div class="images-container">
+                    <div class="images-highlights">
+                        <div class="item-highlights">
+                            <div class="image"><div class="content"></div></div>
+                        </div>
+                        <div class="item-highlights">
+                            <div class="image"><div class="content"></div></div>
+                        </div>
+                        <div class="item-highlights">
+                            <div class="image"><div class="content"></div></div>
+                        </div>
+                        <div class="item-highlights">
+                            <div class="image"><div class="content"></div></div>
+                        </div>
+                    </div>
+                    <div id="leftBtn" class="btn" onclick="prevSlide()">
+                        <span class="material-symbols-outlined">chevron_left</span>
+                    </div>
+                    <div id="rightBtn" class="btn" onclick="nextSlide()">
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </div>
+                    <div class="index-container">
+                        <div class="index-image" onclick="showSlide(0)"></div>
+                        <div class="index-image" onclick="showSlide(1)"></div>
+                        <div class="index-image" onclick="showSlide(2)"></div>
+                        <div class="index-image" onclick="showSlide(3)"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="evenement">
+                    <div class="image"></div>
+                    <div class="title">Êtes-vous dans le coup pour la semaine de la Non-Violence Universitaire ?</div>
+                    <label for="verifier">Cliquez sur</label>
+                    <a href="pages/evenements-et-activites.html" id="verifier">Vérifier</a>
+                </div>
+                <div class="qst">
+                    <div class="title">Ceste Fsbm</div>
+                    <div class="content">
+                        <div class="left">
+                            <div class="text">Gérez tous vos services 24h/24h par un seul clic</div>
+                            <div class="button">Me connecter</div>
+                            <div class="rjn"><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfyQuI0y-WjCAUS2bQVdID2kI8mUA5selMLHsxnFuf237upZA/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaZE8DLbqf-TtQJ58sptt-METIxpAAQRVyCb9SqbUbH-ziZuziDGHkWku4Y_aem_Pv0rBCMhX3zau4nbdU9lVg">Créez votre compte</a></div>
+                        </div>
+                        <div class="right">
+                            <div class="icon">
+                                <span class="fas fa-male"></span>
+                                <span class="fas fa-seedling"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec3">
+            <div class="title">Des Membres</div>
+            <div class="membres">
+                <div class="membre">
+                    <div class="image"></div>
+                    <div class="subimage"></div>
+                    <div class="content">
+                        <div class="nom">M. Ayoub Karroumi</div>
+                        <div class="description">
+                            Président du club Ceste Fsbm <br>
+                            Doctorant Fsbm <br>
+                            Technicien en ennoblissement
+                        </div>
+                     </div>
+                </div>
+                <div class="membre">
+                     <div class="image"></div>
+                     <div class="subimage"></div>
+                     <div class="content">
+                        <div class="nom">M. Mustapha Mouflih</div>
+                        <div class="description">
+                            Responsable du club Ceste Fsbm <br>
+                            Professeur à l'Université Hassan II de Casablanca | FSAC
+                        </div>
+                     </div>
+                </div>
+            </div>
+            <a href="pages/a-propos-de-nous.html" class="voir-plus">Voir plus</a>
+        </section>
+        <section class="sec4">
+            <div class="title">Bilan Annuel</div>
+            <div class="content">
+                <div class="summary">
+                    <ul>
+                        <li>Presentation</li>
+                        <li>
+                            Bilan Annuel des Activites
+                            <ol>
+                                <li>Semaine d'Intégration des Nouveaux Étudiants</li>
+                                <li>Journée d'Intégration des Membres du Club CESTE</li>
+                                <li>Activités de Musée</li>
+                                <li>Célébration de la Marche Verte</li>
+                                <li>Activité Cinématographique</li>
+                                <li>Semaine de la Non-Violence Universitaire</li>
+                                <li>Don du Sang</li>
+                                <li>Activité d'Orientation</li>
+                                <li>Activité Sportive</li>
+                                <li>Journée Internationale de la Femme</li>
+                                <li>Compétition de Plantation</li>
+                            </ol>
+                        </li>
+                        <li>Activités Reportées</li>
+                        <li>Conclusion</li>
+                    </ul>
+                </div>
+                <div class="bilan">
+                    <object data="media/BILAN ANNUEL.pdf" type="application/pdf"></object>
+                    <a target="_blank" href="media/BILAN ANNUEL.pdf" download="Bilan Annuel Ceste Fsbm 2023/2024.pdf">Telecharger le pdf</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="topfooter">
+            <div class="text">Suivez-nous</div>
+            <a href="#"><div class="icon fab fa-whatsapp"></div></a>
+            <a target="_blank" href="https://www.facebook.com/p/Club-CESTE-100068452666451/"><div class="icon fab fa-facebook"></div></a>
+            <a href="#"><div class="icon fab fa-twitter"></div></a>
+            <a target="_blank" href="https://www.instagram.com/ceste_fsbm/?hl=en">
+                <div class="icon">
+                    <div class="icon fab fa-instagram"></div>
+                    <div class="icon-hover fab fa-instagram"></div>
+                </div>
+            </a>
+            <a href="#"><div class="icon fab fa-youtube"></div></a>
+            <a href="#"><div class="icon fab fa-linkedin"></div></a>
+        </div>
+        <div class="bottomfooter">
+            <div class="infos">
+                <div class="ceste">
+                    <div class="partie">
+                        <div>L</div><div>e</div><div class="cap">C</div><div>l</div><div>u</div><div>b</div>
+                    </div>
+                    <div class="partie">
+                        <div>d</div><div>e</div><div>s</div><div class="cap">E</div><div>t</div><div>u</div><div>d</div><div>i</div><div>a</div><div>n</div><div>t</div><div>s</div>
+                    </div>
+                    <div class="partie">
+                        <div>d</div><div>e</div><div>s</div><div class="cap">S</div><div>c</div><div>i</div><div>e</div><div>n</div><div>c</div><div>e</div><div>s</div>
+                    </div>
+                    <div class="partie">
+                        <div>d</div><div>e</div><div>l</div><div>a</div><div class="cap">T</div><div>e</div><div>r</div><div>r</div><div>e</div>
+                    </div>
+                    <div class="partie">
+                        <div>e</div><div>t</div><div>d</div><div>e</div><div class="subpartie"><div>l</div><div>'</div><div class="cap">E</div><div>n</div><div>v</div><div>i</div><div>r</div><div>o</div><div>n</div><div>n</div><div>e</div><div>m</div><div>e</div><div>n</div><div>t</div></div>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div class="tel-fsbm">N° de téléphone de l'université FSBM: <br><a href="tel:+212 522 704 671">+212 522 704 671</a></div>
+                    <div class="tel-ceste">N° de téléphone du club CESTE-FSBM: <br><a href="tel:+212 663 121 121">+212 663 121 121</a></div>
+                    <div class="loc">
+                        Localisation de l'université FSBM: <br>
+                        <a target="_blank" href="https://maps.app.goo.gl/ffP5RpTu8XSobDpi9" target="_blank">FSBM Casablanca, Morocco</a>
+                        <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2779.066315329799!2d-7.544054525068143!3d33.56661057334369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda633261bbe100f%3A0xe48b03dd8c6794a0!2sFaculty%20of%20Sciences%20Ben%20M&#39;Sick%20(FSBM-UH2C)!5e1!3m2!1sen!2sma!4v1732289775516!5m2!1sen!2sma"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="logo_fsbm-game">
+                    <a target="_blank" href="https://www.fsb.univh2c.ma/"><img src="media/fsbm.png" alt="Logo FSBM"></a>
+                    <div class="game">
+                        <canvas id="gameCanvas" width="180px" height="180px"></canvas>
+                        <div class="score-container">
+                            <div class="score">Score: <div id="scoreText">0</div></div>
+                        </div>
+                        <button id="plantBtn">Plant Seed</button>
+                        <audio class="plantSound" src="media/plant1.mp3"></audio>
+                        <audio class="plantSound" src="media/plant2.mp3"></audio>
+                        <audio class="plantSound" src="media/plant3.mp3"></audio>
+                        <audio id="levelUpSound" src="media/levelUp.mp3"></audio>
+                    </div>
+                </div>
+            </div>
+            <div class="links">
+                <a href="pages/contactez-nous.html">Contactez-nous</a>
+                <a href="pages/evenements-et-activites.html">Événements et Activités</a>
+                <a href="pages/a-propos-de-nous.html">À propos de nous</a>
+            </div>
+            <div class="copyright">© 2024 Ceste-Fsbm</div>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/plant-game.js"></script>
+</body>
+</html>

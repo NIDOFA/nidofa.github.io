@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family: "Fira Sans", 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+}
+
+.container{
+    padding-top: 100px;
+    transition: all .5s;
+}
+
+.container .heading{
+    background-color: #029a32;
+    height: 140px;
+    padding: 0 calc((100vw - 980px)/2);
+}
+
+.container .heading .path{
+    font-family: "Archivo Narrow", Tahoma, sans-serif;
+    padding: 10px 0;
+}
+
+.container .heading .path a{
+    color: black;
+}
+
+.container .heading .title{
+    font-size: 3.5rem;
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+
+.container main{
+    padding: 40px calc((100vw - 980px)/2);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0, 2vw, 40px);
+}
+
+.container main section{
+    padding: 0 10px;
+}
+
+.container main section .title{
+    font-family: "Archivo Narrow", Tahoma, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.container main section .text{
+    font-size: 1.4rem;
+    text-align: justify;
+    padding: 10px 0;
+}
+
+.container main section .text ul{
+    padding-left: 1em;
+}
+
+.container main section .text > ul{
+    list-style-type: none;
+}
+
+.container main section .text > ul > li{
+    margin-left: 1.5em;
+    position: relative;
+}
+
+.container main section .text > ul > li::before{
+    content: '➢';
+    position: absolute;
+    left: -1.5em;
+    top: 0;
+}
+
+.container section:nth-child(3){
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.container section:nth-child(3) .title{
+    align-self: start;
+}
+
+.container section:nth-child(3) .membres{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.container section:nth-child(3) .membres .membre{
+    width: 40vw;
+    max-width: 400px;
+    aspect-ratio: 4/3;
+    position: relative;
+}
+
+.container section:nth-child(3) .membres .membre .image{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../media/M.\ Ayoub\ Karroumi.jpeg);
+    z-index: -1;
+    border-radius: 10px;
+    filter: brightness(1.2);
+}
+
+.container section:nth-child(3) .membres .membre:last-child .image{
+    background-image: url(../media/M.\ Mustapha\ Mouflih.jpeg);
+    background-position: top;
+}
+.container section:nth-child(3) .membres .membre .subimage{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #000, #0000);
+    border-radius: 10px;
+}
+
+.container section:nth-child(3) .membres .membre .content{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.container section:nth-child(3) .membres .membre .content .nom{
+    font-size: clac(1rem + .5vw);
+    color: white;
+}
+
+.container section:nth-child(3) .membres .membre .content .description{
+    font-size: calc(.5rem + .5vw);
+    color: white;
+    padding-top: 10px;
+}
+
+.container main section:last-child .text a{
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .2s;
+}
+.container main section:last-child .text a:hover{
+    color: #248fba;
+    text-decoration: underline;
+}
+
+.container main section:last-child .text a:active{
+    transform: scale(.95);
+}
