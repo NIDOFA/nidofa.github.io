@@ -6,7 +6,6 @@
 
 body{
     min-height: 100vh;
-    min-width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,7 +25,6 @@ body{
     gap: 2px;
     border: 5px solid #3a3a3a;
     padding: 5px 0;
-    height: max-content;
     aspect-ratio: 1;
 }
 
